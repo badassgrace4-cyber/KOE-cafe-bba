@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cafe Reservation</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #ecf8f8;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+        }
+
+        .container {
+            background-color: #eee4e1;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            width: 400px;
+            background-color: rgba(238, 228, 225, 0.8); /* Adjust alpha value for transparency */
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    width: 400px;
+ 
+        }
+
+        .header {
+            background-color: #e7d8c9;
+            color: #e6beae;
+            text-align: center;
+            padding: 20px;
+        }
+
+        .form-container {
+            padding: 20px;
+            transition: background-color 0.3s ease;
+            padding: 20px;
+    transition: background-color 0.3s ease;
+    background-color: rgba(234, 231, 231, 0.5); 
+   
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+            
+        }
+
+        label {
+            margin-bottom: 8px;
+            color: #b2967d;
+        }
+
+        input,
+        textarea,
+        select {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #f9f7f6;
+            border-radius: 4px;
+            box-sizing: border-box;
+            transition: border-color 0.3s ease;
+        }
+
+        input:focus,
+        textarea:focus,
+        select:focus {
+            border-color: #e6beae;
+        }
+
+        button {
+            background-color: #b2967d;
+            color: #ecf8f8;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 16px;
+            transition: background-color 0.3s ease, color 0.3s ease, transform 0.2s ease;
+        }
+
+        button:hover {
+            background-color: #e6beae;
+            color: #b2967d;
+        }
+
+        button:active {
+            transform: scale(0.95);
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(-20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+    background-color: rgba(236, 248, 248, 0.8); /* Adjust alpha value for transparency */
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+            animation: fadeIn 0.5s ease-in-out;
+            background-image: url('https://virtualbackgrounds.site/wp-content/uploads/2020/07/coffee-shop-1024x576.jpg');
+            background-size: cover;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <div class="header">
+        <h2 style="color:black">Cafe Reservation</h2>
+    </div>
+    <div class="form-container">
+        <form action="https://api.web3forms.com/submit" method="POST">
+            <input type="hidden" name="access_key" value="8bae1929-a4f1-4520-9468-c4a80a0b266e">
+
+            <label for="name">Name:</label>
+            <input type="text" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" name="email" required>
+
+            <label for="tables">Number of Tables:</label>
+            <input type="number" name="tables" required>
+
+            <label for="date">Date:</label>
+            <input type="date" name="date" required>
+
+            <label for="time">Time:</label>
+            <input type="time" name="time" required>
+
+            <label for="message">Additional Message:</label>
+            <textarea name="message" required></textarea>
+
+            <button type="submit">Submit Reservation</button>
+        </form>
+    </div>
+</div>
+
+</body>
+</html>
